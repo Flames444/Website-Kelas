@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Anggota Kelas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Website Anggota Kelas</h1>
+</header>
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="struktur.html">Struktur Organisasi</a>
+    <a href="jadwal.html">Jadwal Pelajaran</a>
+    <a href="piket.html">Jadwal Piket</a>
+    <a href="inventaris.html">Inventaris</a>
+    <a href="anggota.html">Anggota Kelas</a>
+</nav>
+<div class="container">
+    <h2>Daftar Siswa Kelas 35</h2>
+    <table id="siswaTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data siswa akan otomatis diisi di sini -->
+      </tbody>
+    </table>
+</div>
+<script>
+  // Data nama siswa, bisa disesuaikan
+  const namaSiswa = [
+    "Adam Saputra", "Aditya Juniarta Saputra", "Agung Setiawan Wiguna", "Agung Wahyu Setiawan", "Agustina Wulan Rhamadani", "Ahnaf Fikri Abdillah", "Anissa Marsela Dewi", "Balqis Hikmah Ramadhany", "Cahya Salsabila Aufa Atiqah", "Cheril Jasmine Ayunita",
+    "Cheryna Wildani Putri", "Dava Rizky Aprillyano", "Defina Rahma Rosaria", "Delano Asna Putra Bhekti Widiyanto", "Dewondaru Yudhantoro", "Dwi Juniarta Sa'diyah", "Elvaretta Methayia Shavira Dasilva", "Farieh Tanzil Furqoni", "Forenda Rialita Rofiq", "Galuh Pramuditya Ningtyas",
+    "Intan Nur Al Haya Zayani", "Irgi Rajendra Edy Pratama", "Khusnul Khotimah", "  Levi Zhafran Azka", "Lucky Maulana Akbar", "M. Daffa Nur Alfinsyah", "Moch Dhani Pratama Efendi", "Muhammad Farel Alen Firmansyah", "Najura Keisa Arinda", "Patricia Elisa Maratilova",
+    "Rasya Putra Indra Ferdian", "Rifqi Naufal Fasaroni", "Shafwan Sultanil Auliya", "Vindi Shinta Nuriyah","Zulfikar Bintang Zurayuda"
+  ];
+
+  const tbody = document.getElementById("siswaTable").getElementsByTagName("tbody")[0];
+
+  for (let i = 0; i < 35; i++) {
+    const row = tbody.insertRow();
+    const cellNo = row.insertCell(0);
+    const cellNama = row.insertCell(1);
+
+    cellNo.innerHTML = i + 1;
+    // Mengisi nama siswa dari array tanpa angka
+    cellNama.innerHTML = namaSiswa[i % namaSiswa.length];
+  }
+</script>
+</body>
+<footer>
+    <p>&copy; 2026 XI RPL. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jadwal Piket Siswa</title>
+<style>
+  /* Reset dan gaya dasar */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  /* Header */
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* Animasi muncul */
+    animation: fadeInDown 1s ease-out;
+  }
+
+  /* Navigasi */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+  }
+
+  /* Kontainer utama */
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    /* Animasi muncul */
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.3s;
+  }
+
+  /* Judul utama */
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+
+  /* Gambar jadwal piket */
+  .jadwal-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .jadwal-img img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+
+  /* Memberikan delay pada setiap gambar agar muncul berurutan */
+  .jadwal-img img:nth-child(1) { animation-delay: 0.5s; }
+
+  /* Efek hover gambar */
+  .jadwal-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  /* Animasi keyframes */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Gaya footer */
+  footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 1em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 1s;
+  }
+
+  /* Animasi untuk footer */
+  @keyframes fadeIn {
+    from 
+    { 
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to { opacity: 1; 
+        transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+<h1>Jadwal Piket Siswa</h1>
+</header>
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="struktur.html">Struktur Organisasi</a>
+    <a href="jadwal.html">Jadwal Pelajaran</a>
+    <a href="piket.html">Jadwal Piket</a>
+    <a href="inventaris.html">Inventaris</a>
+    <a href="anggota.html">Anggota Kelas</a>
+</nav>
+<div class="container">
+<h2>Jadwal Piket</h2>
+<div class="jadwal-img">
+  <img src="Piket.jpeg" alt="Jadwal Piket Senin" />
+</div>
+</div>
+<!-- Perbaikan footer -->
+<footer>
+  <p>&copy; 2026 XI RPL. All rights reserved.</p>
+</footer>
+</body>
+</html>
