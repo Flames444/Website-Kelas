@@ -1,39 +1,175 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda - Kelas XI RPL</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <style>
-        /* Style tambahan untuk Visi & Misi */
-        .visi-misi {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #eaf2f8;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .visi-misi h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        .visi-misi h4 {
-            color: #34495e;
-            margin-top: 20px;
-        }
-        .visi-misi p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        /* Pastikan tampilan responsif dan menarik */
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beranda - Kelas XI RPL</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  /* Reset dan gaya dasar */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  /* Header */
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Navigasi */
+  nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #1abc9c;
+  }
+
+  /* Gambar utama dan overlay */
+  .Foto-Kelas {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .Foto-Kelas img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+    background: rgba(44, 62, 80, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  /* Container utama */
+  .beranda-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  /* Logo */
+  .logo-kelas {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .logo-kelas img {
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Konten utama */
+  .container {
+    flex: 2 1 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+  }
+
+  /* Judul utama */
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  /* Bagian Visi & Misi */
+  .visi-misi {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #eaf2f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .visi-misi h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .visi-misi h4 {
+    color: #34495e;
+    margin-top: 20px;
+  }
+
+  .visi-misi p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .visi-misi ul {
+    padding-left: 20px;
+  }
+
+  .visi-misi li {
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+
+  /* Responsiveness */
+  @media(max-width: 768px) {
+    .beranda-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-kelas, .container {
+      flex: 1 1 100%;
+    }
+  }
+</style>
 </head>
 <body>
 <header>
-    <h1>Selamat Datang di Website Kelas XI RPL</h1>
+  <h1>Selamat Datang di Website Kelas XI RPL</h1>
 </header>
 
 <nav>
@@ -45,39 +181,40 @@
     <a href="anggota.html">Website Anggota</a>
 </nav>
 
-<!-- Gambar utama di beranda -->
+<!-- Gambar utama -->
 <div class="Foto-Kelas">
     <img src="foto-kelas.jpeg" alt="Kegiatan Kelas" />
     <div class="overlay-text">Kelas XI RPL</div>
 </div>
 
 <div class="beranda-container">
-  <!-- Logo di sebelah kanan atau kiri konten utama -->
+  <!-- Logo -->
   <div class="logo-kelas">
     <img id="Logo" src="logo.jfif" alt="Logo" />
   </div>
-  <!-- Konten utama di samping logo -->
+  
+  <!-- Konten utama -->
   <div class="container">
     <h2>Selamat Datang!</h2>
     <p>Ini adalah website Kelas XI RPL. Di sini Anda dapat menemukan berbagai informasi penting seperti struktur organisasi, jadwal pelajaran, inventaris, dan anggota kelas.</p>
     <p>Jelajahi menu di atas untuk mendapatkan informasi lengkap dan terbaru.</p>
     
-    <!-- Tambahan bagian Visi & Misi -->
+    <!-- Bagian Visi & Misi -->
     <div class="visi-misi">
         <h3>VISI & MISI SEKOLAH</h3>
         <h4>Visi Sekolah</h4>
         <p>Terwujudnya lulusan yang Religius, Cerdas, Berprestasi, Kreatif dan berdaya saing tinggi.</p>
         <h4>Misi Sekolah</h4>
         <ul>
-            <li>Mengintegrasikan dan mengimplementasikan nilai-nilai religius dalam pembelajaran.
-            <li>Menyelenggarakan pelatihan peningkatan kompetensi Pendidik dan tenaga kependidikan.
-            <li>Menambah Jumlah Guru Umum dan Kejuruan.
-            <li>Menambah sarana dan prasarana sekolah.
-            <li>Meningkatkan Link and Match dengan Industri.
-            <li>Membimbing dan mengikutsertakan siswa dalam berbagai Lomba Akademik dan Non Akademik.
-            <li>Mengoptimalisasi kegiatan ekstrakurikuler melalui kerjasama dengan lembaga atau tenaga professional.
-            <li>Meningkatkan kreatifitas siswa melalui kegiatan akademik dan non akademik.
-            <li>Menyelenggarakan Project P5 secara berkelanjutan.
+            <li>Mengintegrasikan dan mengimplementasikan nilai-nilai religius dalam pembelajaran.</li>
+            <li>Menyelenggarakan pelatihan peningkatan kompetensi Pendidik dan tenaga kependidikan.</li>
+            <li>Menambah Jumlah Guru Umum dan Kejuruan.</li>
+            <li>Menambah sarana dan prasarana sekolah.</li>
+            <li>Meningkatkan Link and Match dengan Industri.</li>
+            <li>Membimbing dan mengikutsertakan siswa dalam berbagai Lomba Akademik dan Non Akademik.</li>
+            <li>Mengoptimalisasi kegiatan ekstrakurikuler melalui kerjasama dengan lembaga atau tenaga professional.</li>
+            <li>Meningkatkan kreatifitas siswa melalui kegiatan akademik dan non akademik.</li>
+            <li>Menyelenggarakan Project P5 secara berkelanjutan.</li>
         </ul>
     </div>
   </div>
@@ -85,7 +222,7 @@
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2026 XI RPL. All rights reserved.</p>
+  <p>&copy; 2026 XI RPL. All rights reserved.</p>
 </footer>
 </body>
 </html>

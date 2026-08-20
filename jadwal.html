@@ -48,16 +48,12 @@
 
   /* Kontainer utama */
   .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 10px;
-    /* Animasi muncul */
-    opacity: 0;
-    animation: fadeInUp 1.5s forwards;
-    animation-delay: 0.3s;
   }
 
   /* Judul utama */
@@ -65,8 +61,7 @@
     text-align: center;
     color: #2c3e50;
     margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out;
+    font-size: 1.8em;
   }
 
   /* Tabel jadwal */
@@ -74,10 +69,7 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.5s;
+    font-size: 1em;
   }
 
   th, td {
@@ -156,10 +148,23 @@
     }
   }
 
-  /* Efek tambahan saat hover tabel */
+  /* Efek hover tabel */
   table tbody tr:hover {
     background-color: #dff0d8;
     transition: background-color 0.3s;
+  }
+
+  /* Responsiveness */
+  @media(max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav a {
+      margin: 5px 0;
+    }
   }
 </style>
 </head>
@@ -272,6 +277,7 @@
 <li>Sholat Jumat: 11:30 - 13:00</li>
 </ul>
 </div>
+<!-- Pindahkan footer ke sini -->
 <footer>
 <p>&copy; 2026 XI RPL. All rights reserved.</p>
 </footer>
