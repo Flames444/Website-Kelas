@@ -1,0 +1,160 @@
+/* =========================================
+   STYLE KHUSUS WALI KELAS & PROFILE SISWA
+   ========================================= */
+
+.walikelas-section {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.walikelas-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 2px solid var(--accent-blue);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.walikelas-img-box {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.walikelas-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-blue);
+}
+
+.badge-walikelas {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-blue);
+    color: #0b0f19;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.walikelas-info h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.walikelas-title {
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.walikelas-quote {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+    border-left: 2px solid var(--accent-blue);
+    padding-left: 10px;
+}
+
+.section-title {
+    color: var(--accent-blue);
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* CARDS PROFILE 35 SISWA */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.student-card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.student-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border: 2px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.student-card:hover .student-avatar {
+    border-color: var(--accent-blue);
+}
+
+.student-no {
+    display: inline-block;
+    background-color: rgba(56, 189, 248, 0.1);
+    color: var(--accent-blue);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.student-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.student-role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .walikelas-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .walikelas-quote {
+        border-left: none;
+        border-top: 2px solid var(--accent-blue);
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom rapi di HP */
+        gap: 12px;
+    }
+}

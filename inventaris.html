@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaris - XI RPL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="universal style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html" class="logo">XI RPL</a></div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Profil Kelas <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="struktur.html">Struktur Organisasi</a>
+                    <a href="anggota.html">Anggota Kelas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Jadwal <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="jadwal.html">Jadwal Pelajaran</a>
+                    <a href="piket.html">Jadwal Piket</a>
+                </div>
+            </div>
+            <a href="galeri.html" class="nav-item">Galeri</a>
+            <a href="inventaris.html" class="nav-item active">Inventaris</a>
+            <a href="administrasi.html" class="nav-item">Administrasi</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Inventaris Kelas</h1>
+        <p>Daftar Aset dan Fasilitas Kebersihan & Pembelajaran Kelas XI RPL</p>
+    </div>
+
+    <!-- CONTAINER TABEL -->
+    <div class="container">
+        <div style="overflow-x: auto; margin-bottom: 50px;">
+            <table style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.03); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                <thead>
+                    <tr style="background: rgba(255,255,255,0.08); text-align: left; color: #fff;">
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">No</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Nama Barang</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Jumlah</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Kondisi</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody style="color: #ccc;">
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">1</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Proyektor / LCD</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">1 Unit</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Rusak</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">2</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Sapu Ijuk</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">2 Buah</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Baik</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Kas Kelas</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">3</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Spidol Whiteboard</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">3 Buah</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Baik</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Warna Hitam & Biru</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">4</td>
+                        <td style="padding: 15px;">Penghapus Papan</td>
+                        <td style="padding: 15px;">2 Buah</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">5</td>
+                        <td style="padding: 15px;">Meja Murid</td>
+                        <td style="padding: 15px;">36</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">6</td>
+                        <td style="padding: 15px;">Kursi Murid</td>
+                        <td style="padding: 15px;">36</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">7</td>
+                        <td style="padding: 15px;">Set Komputer untuk murid</td>
+                        <td style="padding: 15px;">28</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">8</td>
+                        <td style="padding: 15px;">Meja guru</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">9</td>
+                        <td style="padding: 15px;">Kursi guru</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">10</td>
+                        <td style="padding: 15px;">Alat pel</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">11</td>
+                        <td style="padding: 15px;">Cikrak</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">12</td>
+                        <td style="padding: 15px;">Foto Presiden</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">13</td>
+                        <td style="padding: 15px;">Foto Wakil Presiden</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">14</td>
+                        <td style="padding: 15px;">Foto Pancasila</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Kas Kelas</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">15</td>
+                        <td style="padding: 15px;">Papan Tulis</td>
+                        <td style="padding: 15px;">1</td>
+                        <td style="padding: 15px;">Baik</td>
+                        <td style="padding: 15px;">Fasilitas Sekolah</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2026 XI RPL. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

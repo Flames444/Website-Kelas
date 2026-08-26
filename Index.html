@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XI RPL - Official Class Website</title>
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- File CSS -->
+    <link rel="stylesheet" href="universal style.css">
+</head>
+<body>
+
+    <!-- NAVBAR DROPDOWN -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="logo">XI RPL</a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="nav-item active">Beranda</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Profil Kelas <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="struktur.html">Struktur Organisasi</a>
+                    <a href="anggota.html">Anggota Kelas</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Jadwal <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="jadwal.html">Jadwal Pelajaran</a>
+                    <a href="piket.html">Jadwal Piket</a>
+                </div>
+            </div>
+
+            <a href="galeri.html" class="nav-item">Galeri</a>
+            <a href="inventaris.html" class="nav-item">Inventaris</a>
+            <a href="administrasi.html" class="nav-item">Administrasi</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="foto-kelas.jpeg" alt="Foto Kelas XI RPL" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-text">
+            <span class="badge">REKAYASA PERANGKAT LUNAK</span>
+            <h1>XI RPL</h1>
+            <p>Tahun Ajaran 2025/2026</p>
+        </div>
+    </header>
+
+    <!-- TATA LETAK PENYAMBUTAN TIGA KOLOM (LOGO KELAS - TEKS & TOMBOL - LOGO JURUSAN) -->
+    <section class="welcome-banner">
+        <div class="welcome-card-v2">
+            <!-- LOGO KELAS (KIRI) -->
+            <div class="banner-logo-box">
+                <img src="logo.jfif" alt="Logo XI RPL" class="banner-logo" onerror="this.src='https://via.placeholder.com/80'">
+                <span>XI RPL</span>
+            </div>
+
+            <!-- TEKS & TOMBOL (TENGAH) -->
+            <div class="welcome-text-center">
+                <h2>Selamat Datang di Website Resmi XI RPL!</h2>
+                <p>Ini adalah pusat informasi digital kelas kami. Jelajahi jadwal pelajaran, inventaris, pengurus kelas, hingga profil 35 anggota kelas kami di sini.</p>
+                
+                <button class="btn-primary" onclick="openModal()">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <span>Lihat Visi & Misi</span>
+                </button>
+            </div>
+
+            <!-- LOGO JURUSAN (KANAN) -->
+            <div class="banner-logo-box">
+                <img src="logo-rpl.jpeg" alt="Logo Jurusan RPL" class="banner-logo" onerror="this.src='https://via.placeholder.com/80'">
+                <span>JURUSAN RPL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-num">35</span>
+                <span class="stat-label">Jumlah Siswa</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-title">Pak Anwar</span>
+                <span class="stat-label">Wali Kelas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-title">RPL</span>
+                <span class="stat-label">Kompetensi Keahlian</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-title">2025/2026</span>
+                <span class="stat-label">Tahun Ajaran</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL POP-UP VISI MISI -->
+    <div id="visiMisiModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>VISI & MISI SEKOLAH</h3>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>Visi Sekolah</h4>
+                <p class="visi-text">Terwujudnya lulusan yang Religius, Cerdas, Berprestasi, Kreatif dan berdaya saing tinggi.</p>
+                
+                <h4>Misi Sekolah</h4>
+                <ul class="misi-list">
+                    <li>Mengintegrasikan dan mengimplementasikan nilai-nilai religius dalam pembelajaran.</li>
+                    <li>Menyelenggarakan pelatihan peningkatan kompetensi Pendidik dan tenaga kependidikan.</li>
+                    <li>Menambah Jumlah Guru Umum dan Kejuruan.</li>
+                    <li>Menambah sarana dan prasarana sekolah.</li>
+                    <li>Meningkatkan Link and Match dengan Industri.</li>
+                    <li>Membimbing dan mengikutsertakan siswa dalam berbagai Lomba Akademik dan Non Akademik.</li>
+                    <li>Mengoptimalisasi kegiatan ekstrakurikuler melalui kerjasama dengan lembaga atau tenaga professional.</li>
+                    <li>Meningkatkan kreatifitas siswa melalui kegiatan akademik dan non akademik.</li>
+                    <li>Menyelenggarakan Project P5 secara berkelanjutan.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>XI RPL</h3>
+                <p>Mewujudkan generasi digital yang kompeten, berkarakter, dan siap berkontribusi untuk masa depan.</p>
+            </div>
+            <p class="copyright">&copy; 2026 XI RPL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById("visiMisiModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("visiMisiModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("visiMisiModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

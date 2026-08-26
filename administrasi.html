@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrasi - XI RPL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="universal style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html" class="logo">XI RPL</a></div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Profil Kelas <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="struktur.html">Struktur Organisasi</a>
+                    <a href="anggota.html">Anggota Kelas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Jadwal <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="jadwal.html">Jadwal Pelajaran</a>
+                    <a href="piket.html">Jadwal Piket</a>
+                </div>
+            </div>
+            <a href="galeri.html" class="nav-item">Galeri</a>
+            <a href="inventaris.html" class="nav-item">Inventaris</a>
+            <a href="administrasi.html" class="nav-item active">Administrasi</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Administrasi & Kas Kelas</h1>
+        <p>Laporan Pemasukan dan Pengeluaran Keuangan XI RPL</p>
+    </div>
+
+    <!-- CONTAINER TABEL -->
+    <div class="container">
+        <div style="overflow-x: auto; margin-bottom: 50px;">
+            <table style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.03); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                <thead>
+                    <tr style="background: rgba(255,255,255,0.08); text-align: left; color: #fff;">
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Tanggal</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Keterangan</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Jenis</th>
+                        <th style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">Nominal</th>
+                    </tr>
+                </thead>
+                <tbody style="color: #ccc;">
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">01 Agu 2026</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Iuran Kas Mingguan #1</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #4ade80;">Pemasukan</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Rp 150.000</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">05 Agu 2026</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Beli Spidol & Penghapus</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #f87171;">Pengeluaran</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">08 Agu 2026</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Iuran Kas Mingguan #2</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #4ade80;">Pemasukan</td>
+                        <td style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">Rp 150.000</td>
+                    </tr>
+                    <tr style="background: rgba(255,255,255,0.02);">
+                        <td style="padding: 15px;">12 Agu 2026</td>
+                        <td style="padding: 15px;">Beli Galon Air Air Minum</td>
+                        <td style="padding: 15px; color: #f87171;">Pengeluaran</td>
+                        <td style="padding: 15px;">Rp 10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2026 XI RPL. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

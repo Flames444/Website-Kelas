@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - XI RPL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="universal style.css">
+    <link rel="stylesheet" href="style khusus.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html" class="logo">XI RPL</a></div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Profil Kelas <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="struktur.html">Struktur Organisasi</a>
+                    <a href="anggota.html">Anggota Kelas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Jadwal <span class="material-symbols-outlined">expand_more</span></button>
+                <div class="dropdown-content">
+                    <a href="jadwal.html">Jadwal Pelajaran</a>
+                    <a href="piket.html">Jadwal Piket</a>
+                </div>
+            </div>
+            <a href="galeri.html" class="nav-item active">Galeri</a>
+            <a href="inventaris.html" class="nav-item">Inventaris</a>
+            <a href="administrasi.html" class="nav-item">Administrasi</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Galeri Kelas</h1>
+        <p>Dokumentasi Momen dan Kegiatan XI RPL</p>
+    </div>
+
+    <!-- CONTAINER GALERI -->
+    <main class="container">
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/galeri-1.jpg" alt="Momen Belajar">
+                </div>
+                <div class="gallery-info">
+                    <h3>Praktikum Pemrograman</h3>
+                    <p>Momen pengerjaan project kelas di laboratorium komputer.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/galeri-2.jpg" alt="Kegiatan Kelas">
+                </div>
+                <div class="gallery-info">
+                    <h3>Peringatan Hari Guru</h3>
+                    <p>Foto bersama wali kelas dan guru-guru pengampu.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/galeri-3.jpg" alt="Lomba Sekolah">
+                </div>
+                <div class="gallery-info">
+                    <h3>Classmeeting 2026</h3>
+                    <p>Keseruan dan selebrasi kemenangan tim kelas XI RPL.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 XI RPL. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
